@@ -1,0 +1,175 @@
+:root {
+  --primary-color: #008080; /* Teal */
+  --secondary-color: #ffffff; /* White */
+  --accent-color: #333333; /* Dark Gray */
+  --text-color: #222222; /* Slightly softer black for text */
+  --background-color: #f8f9fa; /* Light grayish background */
+
+  /* Additional Colors */
+  --light-gray: #e0e0e0; /* Soft gray for borders, dividers */
+  --dark-teal: #005f5f; /* Darker shade of teal for hover effects */
+  --light-teal: #66b2b2; /* Lighter shade of teal for highlights */
+  --muted-text: #666666; /* Subtle gray for less important text */
+  --highlight-color: #ffcc00; /* A bright contrast color (Yellow) */
+  --error-color: #d9534f; /* Red for errors or warnings */
+  --success-color: #5cb85c; /* Green for success messages */
+  --info-color: #5bc0de; /* Blue for informational alerts */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  color: var(--primary-color);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--accent-color);
+  background: linear-gradient(135deg, var(--dark-teal) 66%, #000000 66%);
+  padding: 15px 20px;
+  border-bottom: 2px solid var(--accent-color);
+  z-index: 10000;
+}
+
+.navbar a {
+  color: var(--secondary-color);
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover,
+.navbar-brand:hover {
+  color: var(--light-teal);
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--dark-teal);
+  transform: scale(1.05);
+}
+
+/* Top Section */
+.top-container {
+  background: linear-gradient(135deg, #000000 50%, var(--dark-teal) 100%);
+  color: var(--secondary-color);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.top-container h1 span {
+  color: var(--highlight-color);
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* Subtle Animations */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--highlight-color);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -3px;
+  left: 50%;
+  background: var(--highlight-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.right-icon {
+  height: 64px;
+  width: 64px;
+}
+.right-icon1 {
+  left: 0;
+  top: 10%;
+  animation: images-scale 4s ease 1s infinite alternate-reverse;
+}
+
+.right-icon2 {
+  left: 0;
+  bottom: 10%;
+  animation: images-scale 4s ease 1s infinite alternate-reverse;
+}
+
+.right-icon3 {
+  left: 15%;
+  bottom: 40%;
+  animation: images-scale 4s ease 3s infinite alternate-reverse;
+}
+
+.right-icon4 {
+  top: 5%;
+  right: 0%;
+  animation: images-scale 4s ease 4s infinite alternate-reverse;
+}
+
+.right-icon5 {
+  bottom: 30%;
+  right: 0%;
+  animation: images-scale 4s ease 5s infinite alternate-reverse;
+}
+
+@keyframes images-scale {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.navbar-toggler {
+  background-color: var(--dark-teal);
+}
+
+@media (max-width: 768px) {
+  .intro-boy {
+    height: auto;
+    width: 320px;
+  }
+  .right-icon {
+    height: 40px;
+    width: 40px;
+  }
+}
