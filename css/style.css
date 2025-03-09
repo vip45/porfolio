@@ -74,6 +74,7 @@ button:hover {
   color: var(--secondary-color);
   padding: 80px 20px;
   text-align: center;
+  overflow: hidden;
 }
 
 .top-container h1 span {
