@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a.navbar-brand {
+  font-size: 32px;
+  color: #1b1b1b;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+a.nav-link {
+  font-size: 24px;
+  font-weight: 600;
+}
+.btn_primary {
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  color: #fff;
+  background-color: #3f2fee;
+  border-radius: 100px;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.25;
+  display: flex;
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.btn_primary:hover {
+  background-color: #1b1b1b;
+  scale: 1.1;
+  transition: 0.3s ease;
+}
+
+.changing-text {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(90deg, #ff9b55, #ff2cc0 32%, #3f2fee 99%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: 0.3s ease;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+}
+
+.hero-section {
+  padding: 50px 0;
+}
+
+.hero-section > div {
+  height: 368px;
+}
+
+.hero-section h1 {
+  font-size: 80px;
+  line-height: 120px;
+  color: #1b1b1b;
+}
+.moving-skills {
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.skills-wrapper {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills-track {
+  display: inline-block;
+  animation: scrollSkills 30s linear infinite;
+}
+
+@keyframes scrollSkills {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skill-item {
+  display: inline-block;
+  margin: 0 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.2);
+}
+
+/* Balloon pop animation */
+.skill-pop {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.2);
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  z-index: 9999;
+  animation: popToCenter 1s forwards ease-out;
+  padding: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* Dark with transparency */
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+@keyframes popToCenter {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.2;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
