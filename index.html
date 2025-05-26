@@ -15,6 +15,9 @@
     <!-- Bootstrap JS (depends on Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
     <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
@@ -39,14 +42,12 @@
                         <a class="nav-link active" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Skills</a>
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Experience</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
+
                 </ul>
                 <button class="btn_primary "> Contact Me </button>
 
@@ -58,19 +59,18 @@
     <section class="hero-section container">
 
         <div class="row">
-            <div class="col-9">
+            <div class="col-md-9 col-12">
                 <h1>
                     <span id="flipping-text"></span>
 
                     <span id="changing-text" class="changing-text"></span>
                 </h1>
             </div>
-            <div class="col-3"></div>
         </div>
 
     </section>
 
-    <section class="moving-skills container-fluid">
+    <section class="moving-skills container-fluid" id="skills">
         <div class="skills-wrapper">
             <div class="skills-track" id="skills-track">
 
@@ -78,12 +78,105 @@
         </div>
     </section>
 
+    <section id="projects"
+        class="project-wrapper container-fluid d-flex justify-content-center flex-column align-items-center px-0">
+        <div class="project-div d-flex justify-content-center gap-4">
+            <div class="project-div-text">
+                <h2>Branding Identity</h2>
+                <P>Create a trusted, global brand with our expert designs and strategies. We help improve your brand's
+                    visibility,
+                    credibility, and connection with customers both online and offline.</P>
+            </div>
+            <ul>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+            </ul>
+            <div class="project-div-img"></div>
+        </div>
+        <div class="project-div d-flex justify-content-center gap-4">
+            <div class="project-div-text">
+                <h2>Branding Identity</h2>
+                <P>Create a trusted, global brand with our expert designs and strategies. We help improve your brand's
+                    visibility,
+                    credibility, and connection with customers both online and offline.</P>
+            </div>
+            <ul>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+            </ul>
+            <div class="project-div-img"></div>
+        </div>
+        <div class="project-div d-flex justify-content-center gap-4">
+            <div class="project-div-text">
+                <h2>Branding Identity</h2>
+                <P>Create a trusted, global brand with our expert designs and strategies. We help improve your brand's
+                    visibility,
+                    credibility, and connection with customers both online and offline.</P>
+            </div>
+            <ul>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+            </ul>
+            <div class="project-div-img"></div>
+        </div>
+        <div class="project-div d-flex justify-content-center gap-4">
+            <div class="project-div-text">
+                <h2>Branding Identity</h2>
+                <P>Create a trusted, global brand with our expert designs and strategies. We help improve your brand's
+                    visibility,
+                    credibility, and connection with customers both online and offline.</P>
+            </div>
+            <ul>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+            </ul>
+            <div class="project-div-img"></div>
+        </div>
+        <div class="project-div d-flex justify-content-center gap-4">
+            <div class="project-div-text">
+                <h2>Branding Identity</h2>
+                <P>Create a trusted, global brand with our expert designs and strategies. We help improve your brand's
+                    visibility,
+                    credibility, and connection with customers both online and offline.</P>
+            </div>
+            <ul>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+                <li>Visual Identity</li>
+            </ul>
+            <div class="project-div-img"></div>
+        </div>
+    </section>
 
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <script src="resources/js/index.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
