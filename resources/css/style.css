@@ -20,6 +20,25 @@ body {
   padding-top: 150px;
 }
 
+/* Whole scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Light gray or any background you prefer */
+}
+
+/* Scrollbar thumb (draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #3f2fee;
+}
+
+html {
+  scrollbar-color: #3f2fee #f0f0f0; /* thumb | track */
+}
+
 a.navbar-brand {
   font-size: 32px;
   color: #1b1b1b;
