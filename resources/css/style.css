@@ -3,9 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
 body {
   padding-bottom: 600px;
+  padding-top: 150px;
 }
 
 a.navbar-brand {
@@ -187,4 +199,78 @@ a.nav-link {
 
 .project-div-text {
   width: 400px;
+}
+
+.move-up {
+  background-color: #3f2fee;
+  color: white;
+  padding: 24px 36px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 100%;
+  font-weight: bold;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 100;
+}
+
+.custom-nav {
+  height: 150px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  transition: top 0.8s ease;
+  z-index: 999;
+}
+
+#navbar.hide {
+  top: -150px; /* Adjust based on navbar height */
+}
+
+.why-hire-me {
+  border-top: 4px solid whitesmoke;
+  background-color: #1b1b1b;
+  color: #f9f9f9;
+  padding: 64px 0;
+  min-height: max-content;
+  height: calc(100vh + 200px);
+  display: flex;
+  align-items: center;
+}
+
+.why-hire-me h1 {
+  margin-bottom: 40px;
+}
+.why-me {
+  background-color: #242424;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 0 20px;
+  align-items: center;
+  padding: 24px 32px;
+}
+
+.why-me img {
+  height: 48px;
+  aspect-ratio: 1;
+}
+
+.why-me:not(:last-child) {
+  border-bottom: 1px solid rgba(245, 245, 245, 0.468);
+}
+
+.why-me p:first-child {
+  font-size: 24px;
+  color: #ffffff51;
+}
+
+.why-me p:nth-child(2) {
+  font-size: 32px;
 }

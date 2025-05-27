@@ -115,3 +115,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+let prevScrollPos = window.pageYOffset;
+
+window.addEventListener("scroll", () => {
+  const currentScrollPos = window.pageYOffset;
+  const navbar = document.getElementById("navbar");
+
+  if (prevScrollPos > currentScrollPos) {
+    // Scrolling up
+    navbar.classList.remove("hide");
+  } else {
+    // Scrolling down
+    navbar.classList.add("hide");
+  }
+
+  prevScrollPos = currentScrollPos;
+});
